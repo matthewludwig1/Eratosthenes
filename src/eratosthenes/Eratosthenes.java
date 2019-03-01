@@ -27,7 +27,7 @@ public class Erastothenes {
             if (numbers[j-1] == true) {
                 System.out.println(j);
                 // if the number at each index is not prime
-                for (int k = j * j; k <= numbers.length; k +=j) {
+                for (int k = (int)Math.pow(j, 2); k <= numbers.length; k +=j) {
                     numbers[k-1] = false;
                 }
             }
