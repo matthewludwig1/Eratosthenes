@@ -22,7 +22,7 @@ public class Eratosthenes {
         int range = Integer.parseInt(inputNum.nextLine());
         boolean numbers [] = new boolean[range]; // prime numbers denoted as true
         System.out.println("The prime numbers in between 2 and " + range );
-        Arrays.fill(numbers,true); // default state
+        Arrays.fill(numbers,true); // default boolean state
         
         for (int j = 2;  j<= numbers.length; j++) {
             // if the number is prime
